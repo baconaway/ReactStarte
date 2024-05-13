@@ -1,0 +1,76 @@
+
+/* Reset CSS for the body to remove unwanted margins and padding */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1c313e;
+  color: white;
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+
+/* Navbar Component Styles */
+.navbar {
+  background-color: #1c313e; 
+  padding: 10px 20px;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navLink {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #c36760; /* Lighter teal color on hover/focus */
+}
+
+.activeLink {
+  color: #c36760; /* Different shade for active link */
+  border-bottom: 2px solid #ffffff; /* White bottom border for active link */
+}
+
+
+/* Image Banner Component Styles */
+.imageBanner {
+  width: 100%;
+  height: 200px;
+}
+
+.imageBanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageBanner .textOverlay {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: white; 
+  font-size: 65px; /* Adjust size as necessary */
+  font-weight: bold; /* Optional: adds boldness to the font */
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 1); /* Optional: adds text shadow for better readability */
+}
